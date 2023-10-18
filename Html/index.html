@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoopig mol </title>
+    <link href="../Css/style.css" rel="stylesheet">
+    <link href="../Css/all.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <header class="container-fluid">
+          <div class="container">
+             <div class="parent  d-flex ">
+               <img class="logoImage" src="../Images/download (1).jpg" >
+                    <div class="header_items d-flex" >
+                        <nav class="links d-flex">
+                            <ul id="userReg" class="d-flex">
+                                <li ><a href="siginIn.html" >sigin up</a></li>
+                             <!-- <ul id="userReg" class="d-flex"> -->
+                                <li class="login ms-4 me-5" id="userReg"><a href="login.html" >login in</a></li> 
+                             </ul>
+                            <ul id="userInfo" class="text-sm-center d-flex ">
+                                <li><a href="#" id="user"></a></li>
+                                <li class="cart">
+                                    <div class="d-flex" id="icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                         <span id="countProd"></span>
+                                         <a id="hoverMyProd" class="dropdown">cart</a>
+                                    </div>
+                                    <div id ="myProducts">
+                                        <div id="cartProducts" >
+                                           <span class="number "></span>
+                                           
+                                        </div>
+                                        <!-- <p id="price"> total cost :</p> -->
+                                        <a href="cartProducts.html" id="veiwProd" >veiw all products</a></div>
+                                       
+                                </li>
+                                <li  id="logout"><a href="login.html" >logout</a></li>
+                           </ul>
+                           </nav>
+                           
+                    </div>
+                    </div>
+                    <div class="search-section mb-4 d-flex">
+                        <select name="search">
+                           <option value="1">search by name </option>
+                           <option value="2">search by price </option>
+                        </select>
+                        <div class="search-box ">
+                         <i class="fas fa-search"></i>
+                         <input type="search" placeholder="search"> 
+                         </div> 
+                    </div>
+             </div>
+          </div>
+          <div class="container-fluid row m-auto"></div>
+    </header>
+ 
+    <section >
+   
+      <div class="container " >
+         <div class="title ">  
+            <h1 class="text-center title">Best sallers</h1>
+            <div class="under_line"></div>
+          </div>
+            <div class="products overflow-x-scroll">
+                <div class="productItem">
+                    <img class="faceImage" src="../Images/lady-shirt.png"/>
+                    <img class="backImage" src="../Images/back-lady-shirt.webp"/>
+                     <div class="productItemDescr">
+                        <p id="prodName"> Women’s Herald Tribune Knit Shirt</p>
+                        <span>price: 90$</span>
+                     </div>
+                     <div class="productItemAction">
+                        <button class="addToCart" >add to cart</button>
+                        <i class="far fa-heart" id="addToFav"></i>
+                     </div>
+                </div>
+             
+          </div> 
+        </div>
+    </section>
+    
+<script src="../JavaScript/script.js"></script>
+</body>
+</html>
